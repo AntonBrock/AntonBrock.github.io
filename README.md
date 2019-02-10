@@ -4,7 +4,7 @@
 
 
 Below you can see a screenshot with the result.
-You can also go to AntonBrock.github.io and test it!
+You can also go to **https://antonbrock.github.io/** and test it!
 
 Comment:
 - not adaptive (fixed - 1366px);
