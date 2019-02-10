@@ -1,0 +1,148 @@
+body {
+  background: #171717;
+  
+}
+
+* {box-sizing:border-box}
+
+p {
+  width: 270px;
+  padding: 7px;
+  color: #fff;
+  font-weight: 500;
+  font-family: "open sans", "helvetica neue", Helvetica, Arial, sans-serif;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.container {
+  width: 200px;
+  margin-left: 100px;
+  margin-top: 150px;
+}
+
+.container__p {
+  width: 400px;
+  font-family: "open sans", "helvetica neue", Helvetica, Arial, sans-serif;
+  color: #a2a2a2;
+}
+
+.container h1 {
+  color: #fff;
+  font-size: 54px;
+  width: 400px;
+  font-family: "open sans", "helvetica neue", Helvetica, Arial, sans-serif;
+}
+
+.container__avatar {
+  position: absolute;
+  width: 60px;
+}
+
+.container__dialog {
+  width: 300px;
+  background: #13aff0;
+  border-radius: 5px;
+  margin-left: 80px;
+}
+
+
+.container__dialog:before{
+  content:'';
+  position: absolute;
+  border: 30px solid transparent;	
+  border-top: 0px solid #13aff0;
+  border-right: 15px solid #13aff0;
+  left: 150px;
+}
+
+.container__interface {
+  margin-left: 350px;
+  margin-top: 70px;
+}
+
+.container__interface-main {
+  box-shadow: 81px 51px 94px 0 rgba(0,0,0,.5);
+  width: 400px;
+  height: 500px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transform: perspective(1366px) rotate(1deg) rotateX(10deg) rotateY(-13deg);
+}
+
+.container__interface-part {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 400px;
+  box-shadow: 4px 5px 37px 0 rgba(19,175,240,.29), 81px 51px 104px 0 rgba(0,0,0,.66);
+  transform: perspective(1366px) rotate(1deg) rotateX(10deg) rotateY(-13deg);
+  position: absolute;
+  top: 29%;
+  left: 300;
+}
+
+.container__interface-part:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  transition: .2s ease-in-out,-webkit-transform .2s ease-in-out;
+  box-shadow: 4px 5px 37px 0 rgba(19,175,240,.29), 81px 51px 104px 0 rgba(0,0,0,.66);
+}
+
+
+#slider {
+  max-width: 700px;
+  margin: auto;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-right: 150px;
+  transform: perspective(1366px) rotate(1deg) rotateX(5deg) rotateY(20deg);
+  box-shadow: -200px 0px 84px 0 rgba(0,0,0,.3);
+}
+
+
+.mySlides {
+  display: none;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+.browser {
+  margin: 0 auto;
+  width: 200px;
+  margin-bottom: 100px;
+}
+
+.browser img {
+  width: 40px;
+  height: 40px;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .2
+  } 
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .2
+  } 
+  to {
+    opacity: 1
+  }
+}

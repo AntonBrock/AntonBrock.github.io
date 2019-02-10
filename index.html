@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Part ArtStation TASK </title>
+</head>
+<body>
+
+<div class="section">
+  <div class = "container">
+    <h1>Be seen by the right people</h1>
+    <p class="container__p">Most recruiters in the industry are telling artists to send them their ArtStation. It's standard. When it's on ArtStation, recruiters can quickly find and contact you.</p>
+    <span><img  class="container__avatar" src="avatar.png" alt="avatar"></span>
+    <div class="container__dialog">
+      <p>Use ArtStation to host your portfolio. It’s inexpensive, standardized, widely common in the industry, searchable, clean, and easy to use</p>
+    </div>
+  </div>
+  <div class="container__interface">
+    <img  class="container__interface-main" src="1.png" alt="interface">
+    <img  class="container__interface-part" src="2.png" alt="part interface">
+  </div>
+</div>
+
+<div id="slider">
+  <div class="mySlides fade">
+    <img src="slader1.jpg" alt="slide1" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="slader2.jpg" alt="slide2" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="slader3.jpg" alt="slide3" style="width:100%">
+  </div>
+</div>
+
+<div class="browser">
+  <img src="chrome.png"   alt="chrome">
+  <img src="Mozilla.png"  alt="Mozilla">
+  <img src="Explorer.png" alt="Explorer">
+  <img src="Edge.png"     alt="Edge">
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1
+    }    
+  if (n < 1) {
+    slideIndex = slides.length
+    }
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace("active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += "active";
+}
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1
+    } 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 5000); 
+}
+</script>
+
+</body>
+</html>
