@@ -11,4 +11,4 @@ Comment:
 - cross-browser (browsers are shown in the screenshot);
 - Sladeir (delay 5 seconds)
 
-![Screenshot]()
+![Screenshot](screenPromo.png)
